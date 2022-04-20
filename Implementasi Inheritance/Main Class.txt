@@ -1,0 +1,28 @@
+package tugas_inheritance;
+import java.time.*;
+/**
+ *
+ * @author MOH PRAYOGI
+ */
+public class Tugas_inheritance {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // contoh obyek data pegawai
+        Pegawai p1 = new Pegawai("P01", "Randi Fauzan Ahmad", 2, LocalDate.of(1984, 3, 25));
+        p1.printPegawai();
+        
+        
+        // contoh obyek data pegawai dosen
+        Dosen p2 = new Dosen("P02", "Amalia Fitriani Zulhijah", 1, LocalDate.of(1988, 9, 17), "8888");
+        p2.printPegawai();
+         
+        
+        // contoh obyek data pegawai nondosen
+        NonDosen p3 = new NonDosen("P03", "Cakra Abdi Setia", 1, LocalDate.of(1996, 5, 25));
+        p3.printPegawai();
+    }
+    
+}
